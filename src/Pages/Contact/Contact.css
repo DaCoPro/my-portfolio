@@ -1,0 +1,24 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.Contact > h1 {
+    padding-top: 40px;
+}
+
+.CMLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.CMLinks > a {
+    text-decoration: none;
+    color: white;
+}
