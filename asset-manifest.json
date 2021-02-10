@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.aad6935f.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.82aada5f.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.82aada5f.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.c1d74114.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.c1d74114.js.map",
+    "static/js/2.6921bc95.chunk.js": "/my-portfolio/static/js/2.6921bc95.chunk.js",
+    "static/js/2.6921bc95.chunk.js.map": "/my-portfolio/static/js/2.6921bc95.chunk.js.map",
+    "static/js/3.dbc3a0bb.chunk.js": "/my-portfolio/static/js/3.dbc3a0bb.chunk.js",
+    "static/js/3.dbc3a0bb.chunk.js.map": "/my-portfolio/static/js/3.dbc3a0bb.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "static/css/main.aad6935f.chunk.css.map": "/my-portfolio/static/css/main.aad6935f.chunk.css.map",
+    "static/js/2.6921bc95.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.6921bc95.chunk.js.LICENSE.txt",
+    "static/media/MERNflash.b65e95b9.png": "/my-portfolio/static/media/MERNflash.b65e95b9.png",
+    "static/media/me.813230de.jpg": "/my-portfolio/static/media/me.813230de.jpg",
+    "static/media/minesweeper.5690a243.png": "/my-portfolio/static/media/minesweeper.5690a243.png",
+    "static/media/uspoll.7f3caaff.png": "/my-portfolio/static/media/uspoll.7f3caaff.png",
+    "static/media/zs.80a83e97.png": "/my-portfolio/static/media/zs.80a83e97.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1d74114.js",
+    "static/js/2.6921bc95.chunk.js",
+    "static/css/main.aad6935f.chunk.css",
+    "static/js/main.82aada5f.chunk.js"
+  ]
+}
