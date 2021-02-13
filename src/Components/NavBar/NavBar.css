@@ -4,6 +4,9 @@
     justify-content: space-between;
     padding-top: 0px;
     font-family: 'Merriweather', serif;
+    background-color: #B35035;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -19,6 +22,7 @@
 
 .NavLink {
     text-decoration: none;
-    color: black;
+    color: white;
     padding-right: 20px;
+    font-weight: 900;
 }

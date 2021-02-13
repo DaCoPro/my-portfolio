@@ -1,10 +1,24 @@
 .Resume {
-    background-color: black;
-    color: white;
     height: 100vh;
+
 }
 
 .WholeDoc {
     padding: 40px;
-    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Date {
+    color: #B35035;
+}
+
+.Info {
+    color: grey;
+    margin-top: 0px;
 }
