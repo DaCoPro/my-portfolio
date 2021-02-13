@@ -15,6 +15,9 @@ export default function Portfolio () {
                     <h4>Build with JS, HTML, CSS, MongoDB, Express, Node, & React.</h4>
                     <a href="https://github.com/DaCoPro/MERN-Flashcards"><img className="PortPic" src={mernphoto} alt=""/></a>
                 </div>
+                <br/>
+                <hr/>
+                <br/>
                 <div>
                     <h1>US Polling</h1>
                     <h4>A Polling application built to let a user create poll questions and query other users. The 
@@ -23,6 +26,9 @@ export default function Portfolio () {
                     <h4>Build with Python, Django, CSS, HTML.</h4>
                     <a href="https://github.com/DaCoPro/US-Polling"><img className="PortPic" src={uspolling} alt=""/></a>
                 </div>
+                <br/>
+                <hr/>
+                <br/>
                 <div>
                     <h1>Zen Squirrel</h1>
                     <h4>A project management application with built in Pomodoro Timer. 
@@ -30,6 +36,9 @@ export default function Portfolio () {
                     <h4>Build with JS, Express, Node, CSS, HTML.</h4>
                     <a href="https://github.com/DaCoPro/Pomodoro-proj-mgnt"><img className="PortPic" src={squirrelphoto} alt=""/></a>
                 </div>
+                <br/>
+                <hr/>
+                <br/>
                 <div>
                     <h1>MineSweeper</h1>
                     <h4>An interactive browser game built to learn the dynamics of MVC separation of concerns. Fully functional. 
