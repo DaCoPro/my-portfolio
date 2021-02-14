@@ -41,7 +41,7 @@ export default function Resume () {
                 <br/>
                 <hr/>
                 <br/>
-                <span><h1>SKILLS</h1><h4>(Click for Examples)</h4></span>
+                <span><h1>SKILLS</h1><h4 className="Date">(Click for Examples)</h4></span>
 
                 <div className="Skills">
                     

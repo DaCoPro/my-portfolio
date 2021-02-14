@@ -11,12 +11,18 @@
 
 .CMLinks {
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
+
     
 }
 
 .CMLinks > a {
     text-decoration: none;
     color: black;
+}
+
+.LinkLogos {
+    width: 50px;
+    padding: 20px;
 }
