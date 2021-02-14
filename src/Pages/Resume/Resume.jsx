@@ -1,4 +1,9 @@
 import './Resume.css';
+//logo imports
+import mernLogo from './mernlogo.png';
+import hcjLogo from './hcj2.png';
+import pjLogo from './pj.jpg';
+import gitLogo from './git.png';
 
 export default function Resume () {
     return ( 
@@ -32,6 +37,32 @@ export default function Resume () {
                     <span><h2 className="Heading">GENERAL ASSEMBLY</h2><h4 className="Date" >August 2016 -  June 2018</h4></span>
                     <h4 className="Info">SOFTWARE ENGINEERING IMMERSIVE PROGRAM</h4>
                     <p>Full Stack Web Development</p>
+                </div>
+                <br/>
+                <hr/>
+                <br/>
+                <span><h1>SKILLS</h1><h4>(Click for Examples)</h4></span>
+
+                <div className="Skills">
+                    
+                    <div className="SkillBox">
+                        <img className="Logos" src={mernLogo} />
+                        
+                    </div>
+                    <div className="SkillBox">
+                        <img className="Logos" src={hcjLogo} />
+                        
+                    </div>
+                    <div className="SkillBox">
+                        <img className="Logos" src={pjLogo} />
+                        
+                    </div>
+                    <div className="SkillBox">
+                        <img className="Logos" src={gitLogo} />
+                        
+                    </div>
+                    
+                    
                 </div>
                 
                 

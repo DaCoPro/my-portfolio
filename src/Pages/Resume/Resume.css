@@ -22,3 +22,22 @@ span {
     color: grey;
     margin-top: 0px;
 }
+
+.Logos {
+    width: 300px;
+}
+
+.Skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.SkillBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
