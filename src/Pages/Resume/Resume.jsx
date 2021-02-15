@@ -1,11 +1,52 @@
+//technical imports
+import { useState } from 'react';
+
+//import other files and components
 import './Resume.css';
-//logo imports
+import MERNProjects from '../../Components/Dropdowns/MernProjects';
+import WebProjects from '../../Components/Dropdowns/WebProjects';
+import DjangoProjects from '../../Components/Dropdowns/DjangoProjects';
+import GitProjects from '../../Components/Dropdowns/GitProjects';
+//img imports
 import mernLogo from './mernlogo.png';
 import hcjLogo from './hcj2.png';
 import pjLogo from './pj.jpg';
 import gitLogo from './git.png';
 
 export default function Resume () {
+    //Initialize selector to 0
+    const [showProjects, setShowProjects] = useState(0);
+
+    //When a skill logo is clicked, setShowProjects to it's id.
+    function handleMERNClick(evt) {
+        if (showProjects !== 1) {
+            setShowProjects(1);
+        } else {
+            setShowProjects(0);
+        }
+    }
+    function handleWebClick(evt) {
+        if (showProjects !== 2) {
+            setShowProjects(2);
+        } else {
+            setShowProjects(0);
+        }
+    }
+    function handleDjangoClick(evt) {
+        if (showProjects !== 3) {
+            setShowProjects(3);
+        } else {
+            setShowProjects(0);
+        }
+    }
+    function handleGitClick(evt) {
+        if (showProjects !== 4) {
+            setShowProjects(4);
+        } else {
+            setShowProjects(0);
+        }
+    }
+
     return ( 
         <main className="Resume">
             <div className="WholeDoc">
@@ -41,28 +82,33 @@ export default function Resume () {
                 <br/>
                 <hr/>
                 <br/>
-                <span><h1>SKILLS</h1><h4 className="Date">(Click for Examples)</h4></span>
-
                 <div className="Skills">
-                    
-                    <div className="SkillBox">
-                        <img className="Logos" src={mernLogo} />
-                        
+                    <span><h1>SKILLS</h1></span>
+                    <div className="ReleventProjects">
+                        { showProjects === 0 ? <h4 className="Date">Click Icon for Relevent project list...</h4> : null }
+                        { showProjects === 1 ? <div className="ProjBox"><h4 className="Date">MERN Projects:</h4> <MERNProjects /></div> : null }
+                        { showProjects === 2 ? <div className="ProjBox"><h4 className="Date">HTML/CSS/JS Projects:</h4> <WebProjects /></div> : null }
+                        { showProjects === 3 ? <div className="ProjBox"><h4 className="Date">Django Projects:</h4> <DjangoProjects /></div> : null }
+                        { showProjects === 4 ? <div className="ProjBox"><h4 className="Date">Git Group Work:</h4> <GitProjects /></div> : null }
                     </div>
-                    <div className="SkillBox">
-                        <img className="Logos" src={hcjLogo} />
-                        
+                    <div className="SkillStacks">
+                        <div className="SkillBox">
+                            <img className="Logos" src={mernLogo} onClick={handleMERNClick} />
+                            
+                        </div>
+                        <div className="SkillBox">
+                            <img className="Logos" src={hcjLogo} onClick={handleWebClick} />
+                            
+                        </div>
+                        <div className="SkillBox">
+                            <img className="Logos" src={pjLogo} onClick={handleDjangoClick} />
+                            
+                        </div>
+                        <div className="SkillBox">
+                            <img className="Logos" src={gitLogo} onClick={handleGitClick} />
+                            
+                        </div>
                     </div>
-                    <div className="SkillBox">
-                        <img className="Logos" src={pjLogo} />
-                        
-                    </div>
-                    <div className="SkillBox">
-                        <img className="Logos" src={gitLogo} />
-                        
-                    </div>
-                    
-                    
                 </div>
                 
                 
