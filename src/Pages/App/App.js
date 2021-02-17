@@ -32,7 +32,7 @@ export default function App() {
           <Route path="/contact">
             <Contact /> 
           </Route>
-          <Redirect to="/intro" />
+          <Redirect to="/resume" />
         </Switch>
       </main>
     </Router> 

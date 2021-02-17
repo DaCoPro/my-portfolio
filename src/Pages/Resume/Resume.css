@@ -53,3 +53,14 @@ span {
     flex-direction: column;
     align-items: center;
 }
+
+.ProfessionalSummary {
+    text-align: center;
+    width: 600px;
+
+}
+
+.PSBox {
+    display: flex;
+    justify-content: center;
+}

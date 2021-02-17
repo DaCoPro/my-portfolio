@@ -50,6 +50,16 @@ export default function Resume () {
     return ( 
         <main className="Resume">
             <div className="WholeDoc">
+                
+                <div className="Intro">
+                    <h1>ABOUT ME</h1>
+                    <div className="PSBox">
+                        <h3 className="ProfessionalSummary">"From analyzing econometric data, to balancing a bank vault, to building a browser game, I have developed an eye for detail and a passion for creating a great final product. I consistently work well under pressure, I prioritize personal growth, and I am dedicated to contributing ideas and collaborating with my team to achieve our goals."</h3>
+                    </div>
+                </div>
+                <br/>
+                <hr/>
+                <br/>
                 <div className="Experience">
                     <h1>EXPERIENCE</h1>
                     <span><h2 className="Heading">SOFTWARE ENGINEERING</h2><h4 className="Date" >October 2020 - February 2021</h4></span>
