@@ -51,10 +51,32 @@ export default function Resume () {
         <main className="Resume">
             <div className="WholeDoc">
                 
-                <div className="Intro">
+                {/* <div className="Intro">
                     <h1>ABOUT ME</h1>
                     <div className="PSBox">
                         <h3 className="ProfessionalSummary">"From analyzing econometric data, to balancing a bank vault, to building a browser game, I have developed an eye for detail and a passion for creating a great final product. I consistently work well under pressure, I prioritize personal growth, and I am dedicated to contributing ideas and collaborating with my team to achieve our goals."</h3>
+                    </div>
+                
+                </div> */}
+                <div className="Skills">
+                    <span><h1 className="Heading">MY SKILLS</h1></span>
+                    
+                    <div className="SkillLogos">
+                        <div className="Logo">
+                            <img className="Logos" src={mernLogo} onClick={handleMERNClick} />
+                        </div>
+                        <div  className="Logo">
+                            <img className="Logos" src={hcjLogo} onClick={handleWebClick} />
+                        </div>
+                        <div  className="Logo">
+                            <img className="Logos" src={pjLogo} onClick={handleDjangoClick} />
+                        </div>
+                        <div className="Logo">
+                            <img className="Logos" src={gitLogo} onClick={handleGitClick} />
+                        </div>
+                    </div>
+                    <div className="PortLinkDiv">
+                        <a className="PortLink" href="/portfolio">GO TO PORTFOLIO</a>
                     </div>
                 </div>
                 <br/>
@@ -89,39 +111,6 @@ export default function Resume () {
                     <h4 className="Info">SOFTWARE ENGINEERING IMMERSIVE PROGRAM</h4>
                     <p>Full Stack Web Development</p>
                 </div>
-                <br/>
-                <hr/>
-                <br/>
-                <div className="Skills">
-                    <span><h1>SKILLS</h1></span>
-                    <div className="ReleventProjects">
-                        { showProjects === 0 ? <h4 className="Date">Click Icon for Relevent project list...</h4> : null }
-                        { showProjects === 1 ? <div className="ProjBox"><h4 className="Date">MERN Projects:</h4> <MERNProjects /></div> : null }
-                        { showProjects === 2 ? <div className="ProjBox"><h4 className="Date">HTML/CSS/JS Projects:</h4> <WebProjects /></div> : null }
-                        { showProjects === 3 ? <div className="ProjBox"><h4 className="Date">Django Projects:</h4> <DjangoProjects /></div> : null }
-                        { showProjects === 4 ? <div className="ProjBox"><h4 className="Date">Git Group Work:</h4> <GitProjects /></div> : null }
-                    </div>
-                    <div className="SkillStacks">
-                        <div className="SkillBox">
-                            <img className="Logos" src={mernLogo} onClick={handleMERNClick} />
-                            
-                        </div>
-                        <div className="SkillBox">
-                            <img className="Logos" src={hcjLogo} onClick={handleWebClick} />
-                            
-                        </div>
-                        <div className="SkillBox">
-                            <img className="Logos" src={pjLogo} onClick={handleDjangoClick} />
-                            
-                        </div>
-                        <div className="SkillBox">
-                            <img className="Logos" src={gitLogo} onClick={handleGitClick} />
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                
             </div>
         </main>
     );

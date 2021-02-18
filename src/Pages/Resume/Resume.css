@@ -16,6 +16,7 @@ span {
 
 .Date {
     color: #B35035;
+
 }
 
 .Info {
@@ -24,10 +25,11 @@ span {
 }
 
 .Logos {
-    width: 300px;
+    width: 200px;
 }
 
-.SkillStacks {
+.SkillLogos {
+   
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -63,4 +65,26 @@ span {
 .PSBox {
     display: flex;
     justify-content: center;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 200px; */
+}
+
+a {
+    text-decoration: none;
+    color: #B35035;
+}
+
+.PortLinkDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.PortLink {
+    font-weight: bolder;
+    padding: 20px;
 }
