@@ -13,6 +13,7 @@ import Intro from '../Intro/Intro';
 import Resume from '../Resume/Resume';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
+import BottomBar from '../../Components/BottomBar/BottomBar';
 
 export default function App() {
   return ( 
@@ -32,8 +33,10 @@ export default function App() {
           <Route path="/contact">
             <Contact /> 
           </Route>
+          
           <Redirect to="/resume" />
         </Switch>
+        
       </main>
     </Router> 
   );

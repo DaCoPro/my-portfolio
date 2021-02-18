@@ -39,4 +39,27 @@
 
 .Statement > h4 {
     width: 600px;
+    padding-bottom: 40px;
+}
+
+.PS {
+    text-align: center;
+}
+
+.smithPhoto {
+    width: 100%;
+}
+
+.mePhoto {
+    border-radius: 50%;
+}
+
+.climbingPhoto {
+    width: 400px;
+
+}
+
+.climbingBlurb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
