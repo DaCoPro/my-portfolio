@@ -1,0 +1,13 @@
+.PortfolioItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid;
+    border-color: grey;
+    margin: 5px;
+}
+
+.PortfolioItem > img {
+    height: 200px;
+}

@@ -1,5 +1,12 @@
 //technical imports
 import { useState } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    Redirect
+  } from "react-router-dom";
 
 //import other files and components
 import './Resume.css';
@@ -17,66 +24,60 @@ export default function Resume () {
     //Initialize selector to 0
     const [showProjects, setShowProjects] = useState(0);
 
-    //When a skill logo is clicked, setShowProjects to it's id.
-    function handleMERNClick(evt) {
-        if (showProjects !== 1) {
-            setShowProjects(1);
-        } else {
-            setShowProjects(0);
-        }
-    }
-    function handleWebClick(evt) {
-        if (showProjects !== 2) {
-            setShowProjects(2);
-        } else {
-            setShowProjects(0);
-        }
-    }
-    function handleDjangoClick(evt) {
-        if (showProjects !== 3) {
-            setShowProjects(3);
-        } else {
-            setShowProjects(0);
-        }
-    }
-    function handleGitClick(evt) {
-        if (showProjects !== 4) {
-            setShowProjects(4);
-        } else {
-            setShowProjects(0);
-        }
-    }
+    // //When a skill logo is clicked, setShowProjects to it's id.
+    // function handleMERNClick(evt) {
+    //     if (showProjects !== 1) {
+    //         setShowProjects(1);
+    //     } else {
+    //         setShowProjects(0);
+    //     }
+    // }
+    // function handleWebClick(evt) {
+    //     if (showProjects !== 2) {
+    //         setShowProjects(2);
+    //     } else {
+    //         setShowProjects(0);
+    //     }
+    // }
+    // function handleDjangoClick(evt) {
+    //     if (showProjects !== 3) {
+    //         setShowProjects(3);
+    //     } else {
+    //         setShowProjects(0);
+    //     }
+    // }
+    // function handleGitClick(evt) {
+    //     if (showProjects !== 4) {
+    //         setShowProjects(4);
+    //     } else {
+    //         setShowProjects(0);
+    //     }
+    // }
 
     return ( 
         <main className="Resume">
             <div className="WholeDoc">
                 
-                {/* <div className="Intro">
-                    <h1>ABOUT ME</h1>
-                    <div className="PSBox">
-                        <h3 className="ProfessionalSummary">"From analyzing econometric data, to balancing a bank vault, to building a browser game, I have developed an eye for detail and a passion for creating a great final product. I consistently work well under pressure, I prioritize personal growth, and I am dedicated to contributing ideas and collaborating with my team to achieve our goals."</h3>
-                    </div>
                 
-                </div> */}
                 <div className="Skills">
                     <span><h1 className="Heading">MY SKILLS</h1></span>
                     
                     <div className="SkillLogos">
                         <div className="Logo">
-                            <img className="Logos" src={mernLogo} onClick={handleMERNClick} />
+                            <img className="Logos" src={mernLogo}  />
                         </div>
                         <div  className="Logo">
-                            <img className="Logos" src={hcjLogo} onClick={handleWebClick} />
+                            <img className="Logos" src={hcjLogo}  />
                         </div>
                         <div  className="Logo">
-                            <img className="Logos" src={pjLogo} onClick={handleDjangoClick} />
+                            <img className="Logos" src={pjLogo}  />
                         </div>
                         <div className="Logo">
-                            <img className="Logos" src={gitLogo} onClick={handleGitClick} />
+                            <img className="Logos" src={gitLogo}  />
                         </div>
                     </div>
                     <div className="PortLinkDiv">
-                        <a className="PortLink" href="/portfolio">GO TO PORTFOLIO</a>
+                        <Link className="PortLink" to="/portfolio">GO TO PORTFOLIO</Link>
                     </div>
                 </div>
                 <br/>
